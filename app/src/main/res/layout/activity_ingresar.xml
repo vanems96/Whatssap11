@@ -23,10 +23,13 @@
         android:textStyle="bold"/>
 
     <EditText
+        android:id="@+id/text_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Escriba su usuario aqui"
         android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:textStyle="bold"
         android:textSize="17dp"/>
 
@@ -37,6 +40,7 @@
         android:background="@color/colorPrimaryDark"
         android:textColor="#fff"
         android:layout_marginTop="10dp"
+        android:onClick="sendMessage"
         android:text="Ingresar"
         android:textStyle="bold"/>
 

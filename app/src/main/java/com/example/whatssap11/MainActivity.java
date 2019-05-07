@@ -54,12 +54,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fotoPerfil = (CircleImageView) findViewById(R.id.fotoPerfil);
-        nombre = (TextView) findViewById(R.id.nombre);
+        nombre = (TextView) findViewById(R.id.display_menssage);
         rvMensajes = (RecyclerView) findViewById(R.id.rvMensajes);
         txtMensaje =(EditText) findViewById(R.id.txtMensaje);
         btnEnviar =(Button) findViewById(R.id.btnEnviar);
         btnEnviarFoto = (ImageButton) findViewById(R.id.btnEnviarFoto);
         fotoPerfilCadena = "";
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra("MESSAGE");
+        TextView textView = findViewById(R.id.display_menssage);
+        textView.setText(message);
 
         //instanciando el objeto de la base de datos
         database = FirebaseDatabase.getInstance();
@@ -155,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     Task<Uri> uTask = taskSnapshot.getStorage().getDownloadUrl();
                     while (! uTask.isSuccessful());
                     Uri u = uTask.getResult();
-                    MensajeEnviar m = new MensajeEnviar("Tu amigo te ha enviado una foto",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
+                    MensajeEnviar m = new MensajeEnviar(nombre.getText()+" te ha enviado una foto",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
                     databaseReference.push().setValue(m);
                 }
             });
@@ -170,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                     while (! uTask.isSuccessful());
                     Uri u = uTask.getResult();
                     fotoPerfilCadena = u.toString();
-                    MensajeEnviar m = new MensajeEnviar("Tu amigo ha actualizado su foto de perfil",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
+                    MensajeEnviar m = new MensajeEnviar(nombre.getText()+"ha actualizado su foto de perfil",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
                     databaseReference.push().setValue(m);
                     Glide.with(MainActivity.this).load(u.toString()).into(fotoPerfil);
                 }
