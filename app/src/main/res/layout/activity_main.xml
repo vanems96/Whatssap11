@@ -14,14 +14,16 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/fotoPerfil"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@mipmap/ic_launcher_round" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:layout_margin="4dp"/>
         <TextView
             android:id="@+id/display_menssage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
         //aqui estaba el conectado
     </LinearLayout>
 
