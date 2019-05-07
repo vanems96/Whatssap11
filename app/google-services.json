@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "368294404501",
+    "firebase_url": "https://chat-f0cb5.firebaseio.com",
+    "project_id": "chat-f0cb5",
+    "storage_bucket": "chat-f0cb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368294404501:android:144fd924bae5b386",
+        "android_client_info": {
+          "package_name": "com.example.whatssap11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368294404501-f7e7nbhif30sf0ok42j3gch9sbfk6kp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq72BJeM-_akDvVt53_JmINL2nwe3Pg_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368294404501-f7e7nbhif30sf0ok42j3gch9sbfk6kp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
