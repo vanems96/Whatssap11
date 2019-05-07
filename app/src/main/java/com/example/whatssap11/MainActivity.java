@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                     while (! uTask.isSuccessful());
                     Uri u = uTask.getResult();
                     fotoPerfilCadena = u.toString();
-                    MensajeEnviar m = new MensajeEnviar("Tu amigo ah actualizado su foto de perfil",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
+                    MensajeEnviar m = new MensajeEnviar("Tu amigo ha actualizado su foto de perfil",u.toString(),nombre.getText().toString(),fotoPerfilCadena,"2",ServerValue.TIMESTAMP);
                     databaseReference.push().setValue(m);
                     Glide.with(MainActivity.this).load(u.toString()).into(fotoPerfil);
                 }

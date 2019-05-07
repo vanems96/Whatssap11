@@ -29,9 +29,11 @@
         android:id="@+id/rvMensajes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="8dp">
 
     </android.support.v7.widget.RecyclerView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
