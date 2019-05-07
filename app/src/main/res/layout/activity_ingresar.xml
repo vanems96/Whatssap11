@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:id="@+id/login"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:text="Ingrese un nombre de usuario:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba su usuario aqui"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingresar"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="Ingresar"
+        android:textStyle="bold"/>
+
+</LinearLayout>
