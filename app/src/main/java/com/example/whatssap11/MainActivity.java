@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
     private static final int PHOTO_PERFIL = 2;
     private String fotoPerfilCadena;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
