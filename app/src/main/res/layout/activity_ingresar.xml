@@ -24,17 +24,18 @@
 
     <EditText
         android:id="@+id/text_message"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:hint="Escriba su usuario aqui"
         android:textAlignment="center"
         android:ems="10"
         android:inputType="textPersonName"
         android:textStyle="bold"
-        android:textSize="17dp"/>
+        android:textSize="17dp"
+        android:textColor="#fff"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/ingresar"
         android:background="@color/colorPrimaryDark"
